@@ -1,0 +1,102 @@
+html {
+     font-family: sans-serif;
+}
+
+body {
+    color: white;
+}
+
+body::before {
+    content: '';
+    background-image: url(/images/login.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.formcontain {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+#usname {
+    color: #000000;
+}
+
+#uspass {
+    color: #000000;
+}
+
+/*adding a border to the form*/
+form {
+    border: 3px solid #f1f1f1;
+    border-radius: 25px;
+}
+
+/*inputs covering the full width of the form*/
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+/*styling the buttons*/
+button {
+    background-color: #04aa6d;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/*adding hover effect to the buttons*/
+button:hover {
+    opacity: 0.8;
+}
+
+/*extra styling for the cancel button*/
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/*ensuring that the logo is centered*/
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/*styling the logo*/
+img.avatar {
+    width: 60%;
+    border-radius: 50%;
+}
+
+/*adding padding to the containers*/
+.container {
+    padding: 16px;
+}
+
+/*ensuring that the forgot password text is on the right*/
+span.psw {
+    float: right;
+    padding-top: 16px;
+}

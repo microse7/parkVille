@@ -1,0 +1,44 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Parkville Registration
+  link(rel='stylesheet' href='/css/styleRegister.css')
+.container.formcontain
+  .container.formcontain
+    form(name='registerform' action='' method='POST')
+      h2 Register Here
+      .container
+        label(for='name')
+          b Name
+        br
+        input#fName(type='text' placeholder='Enter Your Name' name='name')
+        br
+        label(for='email')
+          b Email
+        br
+        input#email(type='text' placeholder='Enter Your Email' name='email')
+        br
+        label(for='uname')
+          b Username
+        br
+        input#uName(type='text' placeholder='Enter Your Username' name='uname')
+        br
+        label(for='password')
+          b Password
+        br
+        input#pwd(type='password' placeholder='Should have a minimun of 8 alphanumeric characters' name='password')
+        br
+        label(for='password2')
+          b Confirm Password
+        br
+        input#pwd2(type='password' placeholder='Confirm Your Password' name='password2')
+        br
+        button(type='submit') Submit
+        .container
+          button.cancelbtn(type='button') Cancel
+          span.psw
+            | Forgot 
+            a(href='#') password?
+<script src="/js/validateRegister.js"></script>

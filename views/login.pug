@@ -1,0 +1,33 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title ParkVille Login
+  link(rel='stylesheet' href='/css/stylelogin.css')
+.container.formcontain
+  form(name='signin' action='/login' method='POST')
+    h2 Sign in
+    .imgcontainer
+      img.avatar(src='/images/logo.PNG' alt='ParkVille Logo')
+    .container
+      label#usname(for='uname')
+        b Username
+      br
+      input(type='text' placeholder='Enter Your Username' name='uname')
+      br
+      label#uspass(for='psword')
+        b Password
+      br
+      input(type='password' placeholder='Enter Your Password' name='password')
+      br
+      button(type='submit') Sign in
+      label
+        input(type='checkbox' checked='checked' name='remember')
+        | Remember me
+    .container
+      button.cancelbtn(type='button') Cancel
+      span.psw
+        | Not registered? 
+        a(href='/register') Signup here
+<script src="/js/validateLogin.js"></script>

@@ -1,0 +1,36 @@
+.formcontain {
+    max-width: 700px;
+    margin: 0 auto;
+} 
+
+.card-header {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    font-style: oblique;
+    font-weight: 520;
+}
+
+.navbtns {
+    float: right;
+}
+
+.navbtns:hover {
+    opacity: 0.8;
+}
+
+.btn {
+    background-color: lightseagreen;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 15px;
+    
+}
+
+/*adding hover effect to the buttons*/
+.btn:hover {
+    opacity: 0.8;
+}
+

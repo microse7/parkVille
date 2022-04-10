@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkville Registration</title>
+
+    <link rel="stylesheet" href="/public/css/styleRegister.css">
+</head>
+<body>
+    <div class="container formcontain">
+        <div class="container formcontain">
+            <form name="registerform" action="" method="POST">
+                <h2>Register Here</h2>
+                
+                <div class="container">
+                    <label for="name"><b>Name</b></label><br>
+                    <input type="text" placeholder="Enter Your Name" name="name" id="fName"><br>
+    
+                    <label for="email"><b>Email</b></label><br>
+                    <input type="text" placeholder="Enter Your Email" name="email" id="email"><br>
+
+                    <label for="uname"><b>Username</b></label><br>
+                    <input type="text" placeholder="Enter Your Username" name="uname" id="uName"><br>
+
+                    <label for="password"><b>Password</b></label><br>
+                    <input type="password" placeholder="Should have a minimun of 8 alphanumeric characters" name="password" id="pwd"><br>
+
+                    <label for="password2"><b>Confirm Password</b></label><br>
+                    <input type="password" placeholder="Confirm Your Password" name="password2" id="pwd2"><br>
+    
+                    <button type="submit">Submit</button>
+        
+                <div class="container">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- <script src="/public/js/validateRegister.js"></script> -->
+</body>
+</html>
